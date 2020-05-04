@@ -1,5 +1,5 @@
 
-#include "rfm.h"
+#include "rfm69_support.h"
 #include <Secret.h>
 
 //RH_RF69 rf69(RFM69_CS, RFM69_IRQN);
