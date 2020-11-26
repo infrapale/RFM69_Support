@@ -1,7 +1,11 @@
 #ifndef __RFM69_SUPPORT_H__
 #define __RFM69_SUPPORT_H__
+
+
 #include "Arduino.h"
 #include <RH_RF69.h>
+
+#define RFM69_BUF_LEN  RH_RF69_MAX_MESSAGE_LEN
 
 struct rfm69_struct {
     RH_RF69 *rfm;

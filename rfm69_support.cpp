@@ -2,8 +2,11 @@
 #include "rfm69_support.h"
 #include <Secret.h>
 
+/
 //RH_RF69 rf69(RFM69_CS, RFM69_IRQN);
 static rfm69_struct rfm69;
+
+
 
 
 void radio_init(byte rfm_cs_pin, byte rfm_irqn_pin, byte rfm_rst_pin,float rfm_freq)
