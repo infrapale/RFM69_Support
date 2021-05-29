@@ -2,7 +2,6 @@
 #include "rfm69_support.h"
 #include <secrets.h>
 
-/
 //RH_RF69 rf69(RFM69_CS, RFM69_IRQN);
 static rfm69_struct rfm69;
 
@@ -74,7 +73,6 @@ uint8_t radio_read_msg(char *inp_buf, uint8_t max_len){
            do {
                inp_buf[i] = (char)rd_buf[i];
                i++;
-            //} while (rd_buf[i] != 0 && (i < max_len));
             } while ((i < len) && (i < max_len));
             inp_buf[i] = 0; rd_buf[i] = 0; 
             len = i;
