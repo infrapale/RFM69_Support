@@ -75,13 +75,13 @@ uint8_t radio_read_msg(char *inp_buf, uint8_t max_len){
                inp_buf[i] = (char)rd_buf[i];
                i++;
             //} while (rd_buf[i] != 0 && (i < max_len));
-			} while ((i < len) && (i < max_len));
+            } while ((i < len) && (i < max_len));
             inp_buf[i] = 0; rd_buf[i] = 0; 
             len = i;
             
             if (len> 0){
-                Serial.print("Received ["); Serial.print(len); Serial.print("]: ");
-                Serial.println((char*)rd_buf); Serial.print("RSSI: "); Serial.println(rfm69.rfm->lastRssi(), DEC);
+                //Serial.print("Received ["); Serial.print(len); Serial.print("]: ");
+                //Serial.println((char*)rd_buf); Serial.print("RSSI: "); Serial.println(rfm69.rfm->lastRssi(), DEC);
            }
        }       
    }
